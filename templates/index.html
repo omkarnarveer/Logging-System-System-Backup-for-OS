@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Backup Folder</h2>
+<form method="post" action="/backup">
+    <div class="mb-3">
+        <label for="folder_path" class="form-label">Folder Path</label>
+        <input type="text" class="form-control" id="folder_path" name="folder_path" required>
+    </div>
+    <div class="mb-3">
+        <label for="backup_path" class="form-label">Backup Path</label>
+        <input type="text" class="form-control" id="backup_path" name="backup_path" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Backup</button>
+</form>
+{% endblock %}
